@@ -11,6 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { Avatar, TextField } from '@material-ui/core';
 
+import { useAuth } from '../contexts/AuthContext'
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -45,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SignUp() {
+
+  const { signUp } = useAuth();
+
   const classes = useStyles();
 
   return (

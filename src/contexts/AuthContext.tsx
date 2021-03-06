@@ -35,7 +35,7 @@ export function AuthProvider({children}) {
 
     const value = {
         currentUser,
-        signUp,
+        signUp()
     }
 
     return (
